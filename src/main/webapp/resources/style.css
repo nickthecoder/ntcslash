@@ -1,0 +1,64 @@
+/* Layout */
+body { margin: 0; padding: 0; }
+#whole { width: 1000px; margin: 3px auto 0px auto; }
+
+#tabs { float: right; margin: 0px 20px; font-size: 14px; }
+#tabs i { font-size: 20px; }
+.ww_tab { float: left; height: 50px; width: 70px; text-align: center; padding-top: 10px; }
+.ww_tab a { display: block; height: 50px; width: 70px; }
+#header { height: 60px; }
+
+#main { padding: 1em; }
+h1 { padding: 5px 0 0 20px; margin: 0px; font-size: 22px; }
+h2 { padding: 5px 0 0 0; margin: 0px auto; font-size: 30px; }
+h3 { padding: 5px 0 0 0; margin: 0px auto; font-size: 20px; border-bottom: solid 1px #999; }
+h4 { padding: 5px 0 0 0; margin: 0px auto; font-size: 16px; border-bottom: dotted 1px #999; }
+
+#search       { float: right; margin: -10px -10px 0 0; padding: 0px; }
+#search div   { position: relative; width: 210px; }
+.searchtext   { position: absolute; top: 0px; left: 0px; width: 180px; height: 26px; padding-left: 10px; outline: none; }
+.searchsubmit { position: absolute; top: 0px; right: 0px; width: 30px; height: 30px; cursor: hand; cursor: pointer; }
+
+/* Styles */
+#header a { font-weight: normal; text-decoration: none; }
+a { font-weight: bold; text-decoration: none; }
+
+/* Fonts */
+body { font-family: 'Libre Baskerville', serif; }
+#tabs { font-family: 'Roboto Condensed',sans-serif; }
+h1, h2, h3, h4 { font-family: 'Rock Salt', cursive; font-weight: normal; }
+
+/* Colors */
+body { background: #232323; }
+a { color: #f00; }
+#header, #header a { color: #fff; }
+#header { background: #565a5b; }
+#whole { background: #f1f1f3; }
+#main { border-top: 1px solid #fff; }
+.ww_tab { color: #fff; }
+#tabs .wiki     { background: #ff303b; border-right: 1px solid #b00; }
+#tabs .photos   { background: #ff760e; border-right: 1px solid #a30; }
+#tabs .recipes  { background: #ffcb00; border-right: 1px solid #770; }
+#tabs .garden   { background: #78de00; border-right: 1px solid #070; }
+#tabs .software { background: #00cecb; border-right: 1px solid #008; }
+#tabs .family   { background: #66669c; }
+#search input:focus { background: #ee8; }
+#search .searchtext { border: 1px solid #dadada; }
+#search .searchsubmit { background: #dadada; border: none; color: #5d3250; }
+
+/* Responsive */
+@media (max-width: 470px) {
+  #header { height: 120px; }
+  #tabs { width: 214px; margin: 0 auto; float: none; }
+}
+
+@media (max-width: 800px) {
+  h1 { display: none; }
+}
+
+
+@media (max-width: 1000px) {
+  #whole { width: 100%; }
+}
+
+
